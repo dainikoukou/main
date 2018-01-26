@@ -1,0 +1,89 @@
+/**/
+
+
+         
+input.save{position: absolute;
+        top: 2.5%;
+        left:70%;
+        
+        width:25%;
+        height:6%;
+        
+        color: black;
+        
+        
+        outline: none;
+        background-color: lightskyblue;
+
+        border-radius: 7px;
+        
+        font-size: 100%;
+       
+        
+    
+}
+
+
+input.save:active{
+                  background-color: dodgerblue;}
+       
+      
+input.title{resize: none;
+      width:90%;
+      height:5%;
+      font-size:24px;
+      border: 2px solid;
+      border-radius: 5px;
+      padding: 1%;
+      border-color: darkslateblue;
+      
+      position: absolute;
+      top: 12%;
+      left:3.5%;
+      
+
+    
+    }
+    
+    
+
+textarea{resize: none;
+         width:90%;
+         height:60%;
+         font-size: 24px;
+         font: black;
+         
+         border:3px solid;
+         border-radius:10px ; 
+         border-color:darkslateblue; 
+         padding: 5px;
+         
+         position: absolute;
+         top:21%;
+         left:3%;
+         
+         
+}
+
+
+
+
+input.menu{position: absolute;
+        top: 85%;
+        left:4.5%;
+        
+        width:90%;
+        height:10%;
+        
+        color: black;
+        
+        
+        outline: none;
+        background-color: lightskyblue;
+
+        border-radius: 7px;
+        
+        text-align: center;
+        font-size: 150%;}
+        
+input.menu:active{background-color: dodgerblue;}
