@@ -1,13 +1,38 @@
-/**/
+/* コメントアウトテスト */
 
+/* positionの軸 （目安/あとで透明確定）*/
+.base{position: relative;
+      
+            
+      width:95vw;
+      height:95vh;
+      
+      border-style: dotted;
+      }
 
+/*左下に透かしっぽいの入れて高さ調節のための余白を誤魔化（せてないけど）していくスタイル*/
+.sukashi{
+         width:150px;
+         height: 20px;
+         position:absolute;
+         top: 530px;
+         right:10px;
          
+         text-align: center;
+         }
+
+.sukashi:before{color: gray;
+                content: "Daini High School";}
+                
+
+/* 保存ボタン */
 button.save{position: absolute;
-        top: 2.5%;
-        left:70%;
+        top: 10px;
+        right:10px;
         
-        width:25%;
-        height:6%;
+        width:120px;
+        height:50px;
+        
         
         color: black;
         
@@ -16,22 +41,151 @@ button.save{position: absolute;
         background-color: lightskyblue;
 
         border-radius: 7px;
-    
+}
+
+button.save:before{font-size: 20px;
+                   content: "保存"}
+
+button.save:active{background-color: dodgerblue;}
+
+
+/* メモ一覧ボタン */
+button.menu{position: absolute;
+        top: 10px;
+        left:10px;
         
+        width:120px;
+        height:50px;
+        
+        color: black;
+        
+        
+        outline: none;
+        background-color: lightskyblue;
+
+        border-radius: 7px;
+            
     
 }
 
+button.menu:before{font-size: 20px;
+                   content: "メモ一覧"}
 
-button.save:active{
-                  background-color: dodgerblue;}
-                  
-button.save:before{font-size: 100%;
-                  content: "保存";}      
+button.menu:active{background-color: dodgerblue;}
 
-      
+
+/* 並べ替えボタン */
+button.new{position: absolute;
+        top: 10px;
+        right:10px;
+        
+        width:120px;
+        height:50px;
+        
+        
+        color: black;
+        
+        
+        outline: none;
+        background-color: lightskyblue;
+
+        border-radius: 7px;
+}
+
+button.new:before{font-size: 20px;
+                   content: "新規作成"}
+
+button.new:active{background-color: dodgerblue;}
+
+/* 新規作成ボタン*/
+button.narabe{position: absolute;
+        top: 10px;
+        left:10px;
+        
+        width:120px;
+        height:50px;
+        
+        color: black;
+        
+        
+        outline: none;
+        background-color: lightskyblue;
+
+        border-radius: 7px;
+            
+    
+}
+
+button.narabe:before{font-size: 20px;
+                   content: "並べ替え"}
+
+button.narabe:active{background-color: dodgerblue;}
+
+
+/* 編集ボタン */
+button.hensyu{position: absolute;
+        top: 10px;
+        right:10px;
+        
+        width:120px;
+        height:50px;
+        
+        
+        color: black;
+        
+        
+        outline: none;
+        background-color: lightskyblue;
+
+        border-radius: 7px;
+}
+
+button.hensyu:before{font-size: 20px;
+                   content: "編集"}
+
+button.hensyu:active{background-color: dodgerblue;}
+
+
+/* 戻るボタン */
+button.back{position: absolute;
+        top: 10px;
+        left:10px;
+        
+        width:120px;
+        height:50px;
+        
+        color: black;
+        
+        
+        outline: none;
+        background-color: lightskyblue;
+
+        border-radius: 7px;
+            
+    
+}
+
+button.back:before{font-size: 20px;
+                   content: "戻る"}
+
+button.back:active{background-color: dodgerblue;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* タイトルを入力 */
 input.title{resize: none;
-      width:90%;
-      height:5%;
+      width:85vw;
+      height:45px;
       font-size:24px;
       border: 2px solid;
       border-radius: 5px;
@@ -39,18 +193,21 @@ input.title{resize: none;
       border-color: darkslateblue;
       
       position: absolute;
-      top: 12%;
-      left:3.5%;
+      top: 90px;
+      left: 3.5vw;
       
+      outline: none;
+      
+      placeholder:"タイトルを入力";
 
     
     }
     
     
-
+/* 本文を入力 */
 textarea{resize: none;
-         width:90%;
-         height:60%;
+         width:85vw;
+         height:350px;
          font-size: 24px;
          font: black;
          
@@ -59,35 +216,70 @@ textarea{resize: none;
          border-color:darkslateblue; 
          padding: 5px;
          
-         position: absolute;
-         top:21%;
-         left:3%;
+         background-color: white;
          
+         position: absolute;
+         top:160px;
+         left: 3vw;
+         
+         outline: none;
          
 }
 
 
+/* メモ一覧のメモを並べるためのボックス（目安/あとで透明希望）*/
+.memobox{position: fixed;
+      
+            
+      width:90vw;
+      height:68vh;
+      
+      border-style: double;
+      
+      top: 100px;
+      left: 5vw;
+      }
+      
+      /*明日の自分へ
+      これ、縦と横でなんかアンバランスになって死にそう
+      スクロールをひたすら回避せよ
+      もしかしたらいっそmainstyleにfixedぶちかます事態になる可能性もある。
+      がんばれ。ばいばい。お休みー
+      
+      まぼろしのとうふがまってるぞ
+      */
 
 
-button.menu{position: absolute;
-        top: 85%;
-        left:4.5%;
-        
-        width:90%;
-        height:10%;
-        
-        color: black;
-        
-        
-        outline: none;
-        background-color: lightskyblue;
 
-        border-radius: 7px;
-        
-        text-align: center;
-        font-size: 150%;}
-        
-button.menu:active{background-color: dodgerblue;}
+/*メモ閲覧画面のタイトル下線*/
 
-button.menu:before{font-size: 100%;
-                  content: "メモ一覧";}      
+.line{border-top:none;
+      border-right:none;
+      border-left:none;
+      border-bottom:solid 3px;
+      border-color: gray;
+      
+      width:80vw;
+      height: 30px;
+
+      
+      position: absolute;
+      top: 90px;
+      left: 3.5vw;
+      
+        }
+        
+        
+/* メモ閲覧本文を置く枠。（目安/あとで透明希望）*/
+.honbun{position: absolute;
+      
+            
+      width:90vw;
+      height:350px;
+      
+      border-style: double;
+      border-bottom:hidden; /*下船消しとるだけ。スクロールokだからボックス固定しない方がいいからどーしよー*/
+      
+      top: 160px;
+      left: 1.8vw;
+      }
